@@ -39,7 +39,7 @@ namespace Laba16
             
         }
 
-        private static void Print<T>(List<T> list)
+        private static void PrintList<T>(List<T> list)
             where T : struct
         {
             foreach (T item in list)
@@ -66,7 +66,7 @@ namespace Laba16
                 }
             }
             
-            Print(digits);
+            PrintList(digits);
         }
 
         private static void Task2(in int n, in float a, in float d)
@@ -85,7 +85,7 @@ namespace Laba16
                 digits.Add(result);
             }
 
-            Print(digits);
+            PrintList(digits);
         }
 
         private static void Task3(in int n, in float a, in float b)
@@ -103,7 +103,7 @@ namespace Laba16
                 digits.Add(digits.Sum());
             }
             
-            Print(digits);
+            PrintList(digits);
         }
 
         private static void Task4(in int n)
@@ -160,17 +160,11 @@ namespace Laba16
                 digits.Add(_random.Value.Next(0, 100));
             }
 
-            foreach (int digit in digits.Where(d => d % 2 != 0).OrderBy(d => d).ToList())
-            {
-                Console.Write($"{digit} | ");
-            }
+            PrintList(digits.Where(d => d % 2 != 0).OrderBy(d => d).ToList());
 
             Console.WriteLine();
             
-            foreach (int digit in digits.Where(d => d % 2 == 0).OrderByDescending(d => d).ToList())
-            {
-                Console.Write($"{digit} | ");
-            }
+            PrintList(digits.Where(d => d % 2 == 0).OrderByDescending(d => d).ToList());
         }
     }
 }
