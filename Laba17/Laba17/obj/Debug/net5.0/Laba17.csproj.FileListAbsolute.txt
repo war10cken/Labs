@@ -1,0 +1,16 @@
+D:\RiderProjects\Laba17\Laba17\bin\Debug\net5.0\Laba17.exe
+D:\RiderProjects\Laba17\Laba17\bin\Debug\net5.0\Laba17.deps.json
+D:\RiderProjects\Laba17\Laba17\bin\Debug\net5.0\Laba17.runtimeconfig.json
+D:\RiderProjects\Laba17\Laba17\bin\Debug\net5.0\Laba17.runtimeconfig.dev.json
+D:\RiderProjects\Laba17\Laba17\bin\Debug\net5.0\Laba17.dll
+D:\RiderProjects\Laba17\Laba17\bin\Debug\net5.0\ref\Laba17.dll
+D:\RiderProjects\Laba17\Laba17\bin\Debug\net5.0\Laba17.pdb
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\Laba17.csproj.AssemblyReference.cache
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\Laba17.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\Laba17.AssemblyInfoInputs.cache
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\Laba17.AssemblyInfo.cs
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\Laba17.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\Laba17.dll
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\ref\Laba17.dll
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\Laba17.pdb
+D:\RiderProjects\Laba17\Laba17\obj\Debug\net5.0\Laba17.genruntimeconfig.cache
