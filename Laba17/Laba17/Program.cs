@@ -13,8 +13,6 @@ namespace Laba17
 
         private static void Main(string[] args)
         {
-            bool isWorking = true;
-            
             Console.WriteLine("----Task 1----");
             Task1(_random.Value.Next(1, 100), _random.Value.Next(1, 100), _random.Value.Next(1, 100));
             Console.WriteLine();
@@ -96,8 +94,6 @@ namespace Laba17
         private static void Task2(in int n)
         {
             List<int> digits = new();
-
-            digits.Clear();
 
             FillingList(ref digits, n);
 
