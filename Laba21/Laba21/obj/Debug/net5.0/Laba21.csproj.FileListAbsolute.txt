@@ -1,0 +1,16 @@
+D:\RiderProjects\Laba21\Laba21\bin\Debug\net5.0\Laba21.exe
+D:\RiderProjects\Laba21\Laba21\bin\Debug\net5.0\Laba21.deps.json
+D:\RiderProjects\Laba21\Laba21\bin\Debug\net5.0\Laba21.runtimeconfig.json
+D:\RiderProjects\Laba21\Laba21\bin\Debug\net5.0\Laba21.runtimeconfig.dev.json
+D:\RiderProjects\Laba21\Laba21\bin\Debug\net5.0\Laba21.dll
+D:\RiderProjects\Laba21\Laba21\bin\Debug\net5.0\ref\Laba21.dll
+D:\RiderProjects\Laba21\Laba21\bin\Debug\net5.0\Laba21.pdb
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\Laba21.csproj.AssemblyReference.cache
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\Laba21.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\Laba21.AssemblyInfoInputs.cache
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\Laba21.AssemblyInfo.cs
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\Laba21.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\Laba21.dll
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\ref\Laba21.dll
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\Laba21.pdb
+D:\RiderProjects\Laba21\Laba21\obj\Debug\net5.0\Laba21.genruntimeconfig.cache
