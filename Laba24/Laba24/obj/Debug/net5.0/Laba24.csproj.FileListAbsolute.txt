@@ -1,0 +1,17 @@
+D:\RiderProjects\Laba24\Laba24\bin\Debug\net5.0\Laba24.exe
+D:\RiderProjects\Laba24\Laba24\bin\Debug\net5.0\Laba24.deps.json
+D:\RiderProjects\Laba24\Laba24\bin\Debug\net5.0\Laba24.runtimeconfig.json
+D:\RiderProjects\Laba24\Laba24\bin\Debug\net5.0\Laba24.runtimeconfig.dev.json
+D:\RiderProjects\Laba24\Laba24\bin\Debug\net5.0\Laba24.dll
+D:\RiderProjects\Laba24\Laba24\bin\Debug\net5.0\ref\Laba24.dll
+D:\RiderProjects\Laba24\Laba24\bin\Debug\net5.0\Laba24.pdb
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\Laba24.csproj.AssemblyReference.cache
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\Laba24.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\Laba24.AssemblyInfoInputs.cache
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\Laba24.AssemblyInfo.cs
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\Laba24.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\Laba24.dll
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\ref\Laba24.dll
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\Laba24.pdb
+D:\RiderProjects\Laba24\Laba24\obj\Debug\net5.0\Laba24.genruntimeconfig.cache
+D:\RiderProjects\Laba24\Laba24\bin\Debug\net5.0\ImprovedRandom.dll
