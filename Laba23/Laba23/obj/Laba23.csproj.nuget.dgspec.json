@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\RiderProjects\\Laba23\\Laba23\\Laba23.csproj": {}
+    "C:\\Users\\Алексей\\Documents\\Labs\\Laba23\\Laba23\\Laba23.csproj": {}
   },
   "projects": {
-    "D:\\RiderProjects\\Laba23\\Laba23\\Laba23.csproj": {
+    "C:\\Users\\Алексей\\Documents\\Labs\\Laba23\\Laba23\\Laba23.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\RiderProjects\\Laba23\\Laba23\\Laba23.csproj",
+        "projectUniqueName": "C:\\Users\\Алексей\\Documents\\Labs\\Laba23\\Laba23\\Laba23.csproj",
         "projectName": "Laba23",
-        "projectPath": "D:\\RiderProjects\\Laba23\\Laba23\\Laba23.csproj",
+        "projectPath": "C:\\Users\\Алексей\\Documents\\Labs\\Laba23\\Laba23\\Laba23.csproj",
         "packagesPath": "C:\\Users\\Алексей\\.nuget\\packages\\",
-        "outputPath": "D:\\RiderProjects\\Laba23\\Laba23\\obj\\",
+        "outputPath": "C:\\Users\\Алексей\\Documents\\Labs\\Laba23\\Laba23\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Алексей\\AppData\\Roaming\\NuGet\\NuGet.Config",

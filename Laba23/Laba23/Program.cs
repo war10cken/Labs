@@ -70,7 +70,7 @@ namespace Laba23
                 {
                     next = str[i + 1];
 
-                    if (current == ' ' && next != current)
+                    if (current == ' ' && next != ' ' && str[i - 1] != ' ')
                     {
                         int index = str.ToList().FindIndex(c => c == current);
 
@@ -89,6 +89,7 @@ namespace Laba23
                         newStr = newStr.Insert(newStr.Length, str[index + 1].ToString());
 
                         str = new string(str.Skip(index + 1).ToArray());
+                        i = 0;
                     }
                 }
             }
