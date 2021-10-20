@@ -1,0 +1,17 @@
+D:\RiderProjects\Laba25\Laba25\bin\Debug\net5.0\Laba25.exe
+D:\RiderProjects\Laba25\Laba25\bin\Debug\net5.0\Laba25.deps.json
+D:\RiderProjects\Laba25\Laba25\bin\Debug\net5.0\Laba25.runtimeconfig.json
+D:\RiderProjects\Laba25\Laba25\bin\Debug\net5.0\Laba25.runtimeconfig.dev.json
+D:\RiderProjects\Laba25\Laba25\bin\Debug\net5.0\Laba25.dll
+D:\RiderProjects\Laba25\Laba25\bin\Debug\net5.0\ref\Laba25.dll
+D:\RiderProjects\Laba25\Laba25\bin\Debug\net5.0\Laba25.pdb
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\Laba25.csproj.AssemblyReference.cache
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\Laba25.GeneratedMSBuildEditorConfig.editorconfig
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\Laba25.AssemblyInfoInputs.cache
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\Laba25.AssemblyInfo.cs
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\Laba25.csproj.CoreCompileInputs.cache
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\Laba25.dll
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\ref\Laba25.dll
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\Laba25.pdb
+D:\RiderProjects\Laba25\Laba25\obj\Debug\net5.0\Laba25.genruntimeconfig.cache
+D:\RiderProjects\Laba25\Laba25\bin\Debug\net5.0\ImprovedRandom.dll
