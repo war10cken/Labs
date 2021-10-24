@@ -6,15 +6,15 @@ using System.Threading.Tasks;
 
 namespace Laba20
 {
-    internal sealed class Pair<TEntityType>
+    internal sealed class Pair<TKey, TEntity>
     {
-        public Pair(int index, TEntityType entity)
+        public Pair(TKey key, TEntity entity)
         {
-            Index = index;
+            Key = key;
             Entity = entity;
         }
 
-        public int Index { get; }
-        public TEntityType Entity { get; }
+        public TKey Key { get; }
+        public TEntity Entity { get; private set; }
     }
 }

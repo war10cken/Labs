@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using Microsoft.VisualBasic;
 
 namespace Laba20
 {
@@ -23,7 +24,7 @@ namespace Laba20
             Console.WriteLine("----End----");
             Console.WriteLine();
             Console.WriteLine("----Task 3----");
-            Task3(25, _random.Value.Next(-15, 15));
+            Task3(25, _random.Value.Next(0, 15));
             Console.WriteLine();
             Console.WriteLine("----End----");
             Console.WriteLine();
@@ -49,8 +50,6 @@ namespace Laba20
         private static void Task1(in int n)
         {
             List<int> digits = new();
-            List<int> c = new();
-            Dictionary<int, int> dictionary = new();
 
             for (int i = 0; i < n; i++)
             {
@@ -62,56 +61,71 @@ namespace Laba20
 
             Console.WriteLine("\n");
 
-            int count, current, next, previous;
+            int count = 0, current, next, previous;
 
+            List<Pair<int, int>> pairs = new();
+
+            // digits = new List<int> {1, 1, 2, 3, 4, 5, 6, 6, 7};
+            
             for (int i = 1; i < digits.Count; i++)
             {
                 current = digits[i];
                 previous = digits[i - 1];
-                dictionary.TryGetValue(current, out count);
+
+                if (current == previous)
+                {
+                    pairs.Add(new Pair<int, int>(current, count += 2));
+                }
 
                 if (i + 1 < digits.Count)
                 {
                     next = digits[i + 1];
 
-                    if (current == previous)
+                    if (current == next && current == previous)
                     {
-                        if (c.Count(d => d == current) == 1)
-                        {
-                            dictionary[current] = ++count;
-                            continue;
-                        }
-
-                        c.Add(current);
-                        dictionary[current] = ++count;
-                    }
-
-                    if (current == next && current != previous)
-                    {
+                        var pair = pairs.Find(p => p.Key == current);
+                        
+                        var entityPropertyInfo = pair.GetType().GetProperty(nameof(pair.Entity));
+                        entityPropertyInfo?.SetValue(pair, ++count);
+                        
+                        int index = pairs.FindIndex(p => p.Key == pair.Key);
+                        
+                        pairs.RemoveAt(index);
+                        pairs.Insert(index, pair);
                         count = 0;
-                        c.Add(current);
-                        dictionary[current] = ++count;
                     }
+                    
+                    if (current != next && current != previous)
+                    {
+                        pairs.Add(new Pair<int, int>(current, ++count));
+                    }
+
+                    count = 0;
+                    continue;
                 }
+                
+                pairs.Add(new Pair<int, int>(digits[i], 1));
             }
 
-            List<int> b = dictionary.Select(item => item.Value).ToList();
-
-            if (c.Any() && b.Any())
+            if (digits[0] != digits[1])
             {
-                Console.WriteLine("Значения элементов, образующих серию");
-                PrintList(c);
-
-                Console.WriteLine("\n");
-
-                Console.WriteLine("Длины серий");
-
-                PrintList(b);
-
+                pairs.Insert(0, new Pair<int, int>(digits[0], 1));
+            }
+            
+            List<int> entities = pairs.Select(p => p.Key).Select(key => pairs.Find(p => p.Key == key))
+                                      .Select(pair => pair?.Entity ?? default).ToList();
+            
+            
+            if (entities.All(entity => entity == 1))
+            {
+                Console.WriteLine($"Числа: {string.Join(' ', pairs.Select(p => p.Key))}\n" +
+                                  $"Кол-ов повторений: {string.Join(' ', entities)}");
                 return;
             }
 
-            Console.WriteLine("Серий чисел не оказалось в массиве");
+            Console.WriteLine($"Числа: {string.Join(' ', pairs.Select(p => p.Key))}\n" +
+                              $"Кол-ов повторений: {string.Join(' ', pairs.Select(p => p.Entity))}");
+
         }
 
         private static void Task2(in int n, int l)
@@ -166,7 +180,7 @@ namespace Laba20
             }
 
             List<int> digits = new();
-            List<Pair<int>> pairs = new();
+            List<Pair<int, int>> pairs = new();
 
             for (int i = 0; i < n; i++)
             {
@@ -186,8 +200,8 @@ namespace Laba20
                 {
                     if (digits[i] == digits[i + 1])
                     {
-                        pairs.Add(new Pair<int>(i, digits[i]));
-                        pairs.Add(new Pair<int>(i + 1, digits[i + 1]));
+                        pairs.Add(new Pair<int, int>(i, digits[i]));
+                        pairs.Add(new Pair<int, int>(i + 1, digits[i + 1]));
                     }
                 }
             }
@@ -200,8 +214,8 @@ namespace Laba20
                 {
                     if (pairs[i].Entity == pairs[i + 1].Entity)
                     {
-                        digits[pairs[i].Index] = k;
-                        digits[pairs[i + 1].Index] = k;
+                        digits[pairs[i].Key] = k;
+                        digits[pairs[i + 1].Key] = k;
                     }
                 }
             }
@@ -282,7 +296,6 @@ namespace Laba20
                 Console.WriteLine($"Точка {i + 1}");
                 Console.WriteLine($"X: {trianglePoints[i].X}");
                 Console.WriteLine($"Y: {trianglePoints[i].Y}");
-                Console.WriteLine();
             }
         }
     }
