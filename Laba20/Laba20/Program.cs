@@ -64,8 +64,6 @@ namespace Laba20
             int count = 0, current, next, previous;
 
             List<Pair<int, int>> pairs = new();
-
-            // digits = new List<int> {1, 1, 2, 3, 4, 5, 6, 6, 7};
             
             for (int i = 1; i < digits.Count; i++)
             {
@@ -232,16 +230,28 @@ namespace Laba20
             {
                 a.Add(new Point(_random.Value.Next(-10, 10), _random.Value.Next(-10, 10)));
             }
-
+            
             a = a.Where(point => point.X < 0)
                 .Where(point => point.Y > 0)
                 .OrderBy(point => point.X)
                 .ThenBy(point => point.Y).ToList();
 
+			Console.WriteLine("Точки второй четверти:");
+			Console.WriteLine();
+            
+			for (int i = 0; i < a.Count(); i++)
+            {
+                Console.WriteLine($"Точка {i + 1}");
+                Console.WriteLine($"Y: {a[i].Y}");
+                Console.WriteLine($"X: {a[i].X}");  
+				Console.WriteLine();
+            }
+			
             if (a.Any())
             {
                 Point farPoint = a.LastOrDefault();
 
+				Console.WriteLine("Самая дальняя точка:");
                 Console.WriteLine($"X: {farPoint.X}");
                 Console.WriteLine($"Y: {farPoint.Y}");
 
